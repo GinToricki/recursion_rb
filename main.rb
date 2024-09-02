@@ -12,3 +12,12 @@ fibs(12,array)
 array.each do |num|
     p num
 end
+
+def fibs_rec(n, arr)
+    if(n < 2)
+        return n
+    end
+    return fibs_rec(n-1) + fibs_rec(n-2)
+end
+
+p fibs_rec(8)
